@@ -1,0 +1,34 @@
+---
+version: "2.1"
+services:
+  wireguard:
+    image: ghcr.io/linuxserver/wireguard:arm64v8-latest
+    container_name: wireguard
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - SERVERPORT=51820
+      - PEERS=3
+      - PEERDNS=1.1.1.1,1.0.0.1
+      - SERVERURL=MY_DOMAIN_DDNS
+      - INTERNAL_SUBNET=10.5.1.0/24
+      - ALLOWEDIPS=0.0.0.0/0
+    volumes:
+      - $HOME/docker/wireguard/config:/config
+      - /lib/modules:/lib/modules
+    ports:
+      - 51820:51820/udp
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 128M
+
