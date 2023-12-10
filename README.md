@@ -1,3 +1,5 @@
+[![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-wireguard.svg?color=88171a&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=wireguard)](https://github.com/linuxserver/docker-wireguard/releases)
+
 <p align="center">
   <img src="https://github.com/AzagraMac/wireguard-docker/assets/571796/d0c3ac2a-1c2d-46a1-bc4d-648d0cafa3a2" width="450" title="logo">
 </p>
