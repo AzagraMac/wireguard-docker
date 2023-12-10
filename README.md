@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/AzagraMac/WireGuardDocker/assets/571796/6afa40ef-e5de-4c8c-ae92-1608bf2ee8eb" width="450" title="logo">
+  <img src="https://github.com/AzagraMac/wireguard-docker/assets/571796/d0c3ac2a-1c2d-46a1-bc4d-648d0cafa3a2" width="450" title="logo">
 </p>
 
 ### Requeriments
