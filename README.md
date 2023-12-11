@@ -34,7 +34,8 @@
     Docker Compose version v2.18.1
 
 ### Clone repo
-    https://github.com/AzagraMac/wireguard-docker.git
+    git clone https://github.com/AzagraMac/wireguard-docker.git
+    cd wireguard-docker
 
 ### Running
     docker compose up -d
